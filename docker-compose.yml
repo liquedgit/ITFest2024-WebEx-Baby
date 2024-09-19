@@ -1,0 +1,10 @@
+version: '3'
+services:
+  webex-sanity-check:
+    container_name: webex-sanity-check
+    build: .
+    environment:
+      - PORT=3000
+      - FLAG=IFEST{f4k3_fl4g}
+    ports:
+      - 2311:3000
